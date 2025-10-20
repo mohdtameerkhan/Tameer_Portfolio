@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+/* In global CSS or Tailwind via class */
+html {
+  overflow-y: scroll;
+}
+
+
+:root {
+    --txt-color: #358597;
+    --btn-color: #A1D6E2;
+    --bg-color: #F1F1F2;
+ 
+}
+
+body {
+  font-family: "Unna", serif;
+}
+
+ 
