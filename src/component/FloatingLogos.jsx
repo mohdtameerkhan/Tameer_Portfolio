@@ -3,22 +3,16 @@ import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/images.png';
 import jsLogo from '../assets/js.png';
 import framerLogo from '../assets/framer.png';
-import reactLogo from '../assets/react.png';
+import reactLogo from '../assets/React.png';
 import TailwindLogo from '../assets/Tailwind.webp';
 
 
-
-
-
-// FloatingLogos.jsx
-// Drop this component into your React + Tailwind project.
-// Place <FloatingLogos /> near the root (e.g. inside App) so it sits behind your main content.
 
 export default function FloatingLogos() {
  const logos = [
   { id: 'html', label: 'HTML', size: 100, bg: '', src: htmlLogo },
   { id: 'css', label: 'CSS', size: 100, bg: '', src: cssLogo },
-  { id: 'css', label: 'framer', size: 100, bg: '', src: framerLogo },
+  { id: 'framer', label: 'framer', size: 100, bg: '', src: framerLogo },
   { id: 'js', label: 'JS', size: 100, bg: '', src: jsLogo },
   { id: 'react', label: 'React', size: 90, bg: '', src: reactLogo },
   { id: 'Tailwind', label: 'Tailwind', size: 70, bg: '', src: TailwindLogo }
@@ -26,9 +20,9 @@ export default function FloatingLogos() {
 ];
 
 
-  // Pre-generate pseudo-random positions so they don't jump on every render
+ 
   const positions = logos.map((_, i) => {
-    // deterministic-ish seed => based on index
+    
     const left = (i * 23 + 11) % 100; // percent
     const top = (i * 37 + 7) % 90; // percent
     const duration = 6 + (i % 4) * 2; // seconds
@@ -92,13 +86,3 @@ export default function FloatingLogos() {
   );
 }
 
-/* Usage:
-  1. Save this file as FloatingLogos.jsx in your components folder.
-  2. In App.jsx or a top-level layout: import FloatingLogos from './components/FloatingLogos';
-  3. Put <FloatingLogos /> once (it is position:fixed; behind content) and your page content will appear above.
-
-  Notes & tips:
-  - Replace the text labels with SVG logos or <img src="/logos/html.svg" /> if you have logo files.
-  - To reduce motion for accessibility, check prefers-reduced-motion and disable animations.
-  - If you use Tailwind, the provided utility classes should work out-of-the-box.
-*/
