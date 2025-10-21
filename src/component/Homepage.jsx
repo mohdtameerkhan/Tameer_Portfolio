@@ -3,6 +3,8 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import profilePic from '../assets/IMG_7165.JPG';
+
 
 export default function AboutCard() {
   return (
@@ -23,7 +25,7 @@ export default function AboutCard() {
 >
   <div className="w-44 h-44 rounded-full overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.4)] hover:scale-105 transition-transform duration-500">
     <img
-      src="\src\assets\IMG_7165.JPG"
+       src={profilePic}
       alt="Profile"
       className="object-cover w-full h-full object-top"
     />
